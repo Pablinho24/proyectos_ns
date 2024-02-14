@@ -1,0 +1,39 @@
+<link rel="stylesheet" href="login.css">
+<ActionBar backgroundColor="#FC4664">
+    <Label class="barra" color="#FFF">Inicio de Sesión</Label>
+  </ActionBar>
+
+<FlexboxLayout class="login" backgroundColor="#1e293b">
+    <StackLayout class="form">
+        <Image class="imagen" src="~/app/images/logo.png"></Image>
+
+<!-- Ingresar Email -->
+      <StackLayout class="input-field">
+        <TextField hint="Email" keyboardType="email"></TextField>
+      </StackLayout>
+
+<!-- Ingresar Contraseña -->
+      <StackLayout class="input-field">
+        <TextField hint="Password" secure="True"></TextField>
+      </StackLayout>
+
+<!-- Confirmar contraseña -->
+      <StackLayout class="input-field">
+        <TextField hint="Confirm password" secure="True"></TextField>
+      </StackLayout>
+        
+
+      <!--Intento de crear un link
+        <FormattedString>
+        <span text="Tap the"></span>
+        <span text="button" class="link" linkTap="onLinkTap">Olvidé la contraseña</span>
+        <span text="2"></span>
+      </FormattedString>-->
+
+<!-- Botón para registrarse -->
+    <Button text="Ingresar" [nsRouterLink]="['/perfil']" pageTransition="hero" clearHistory="true" backgroundColor="#FC4664" color="#FFF"></Button>
+    <button text="Olvidé mi contraseña" [nsRouterLink]="['/home']" pageTransition="slide" clearHistory="true" backgroundColor="#AA46FC" color="#FFF"></button>
+    
+
+    </StackLayout>
+  </FlexboxLayout>

@@ -1,0 +1,23 @@
+
+<ActionBar backgroundColor="#FC4664">
+  <Label text="¡BIENVENIDO!" color="#FFF" ></Label>
+</ActionBar>
+
+<DockLayout stretchLastChild="true" padding="10" backgroundColor="#1e293b">
+  <Label text="" dock="left" width="40" ></Label>
+  <Label text="" dock="top" height="40"></Label>
+  <Label text="" dock="right" width="40"></Label>
+  <Label text="" dock="bottom" height="40"></Label>
+  <StackLayout>
+    <Image src="~/app/images/logo.png"></Image>
+    <Label class="texto_centrado" text="¿Qué haremos hoy?" height="70" color="#FFF"></Label>
+   <Button text="Iniciar sesión" [nsRouterLink]="['/login']" pageTransition="slide" clearHistory="true"></Button>
+   <Button text="Registrarse" [nsRouterLink]="['/registro']" pageTransition="slide" clearHistory="true"></Button>
+   <Button text="Galería" [nsRouterLink]="['/galeria']" pageTransition="slide" clearHistory="true"></Button>
+   <Button text="Eventos" [nsRouterLink]="['/eventos']" pageTransition="slide" clearHistory="true"></Button>
+    <!--<Button text="Acerca de..." [nsRouterLink]="['/home']" pageTransition="slide" clearHistory="true"></Button>-->
+    <!--<Button text="Tienda virtual" [nsRouterLink]="['/tienda']" pageTransition="slide" clearHistory="true"></Button>-->
+    <Button text="Perfil" [nsRouterLink]="['/perfil']" pageTransition="slide" clearHistory="true"></Button>
+    <Button text="Salir" (tap)="onExit()"></Button>
+  </StackLayout>
+</DockLayout>

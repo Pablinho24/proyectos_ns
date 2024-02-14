@@ -1,0 +1,17 @@
+<ActionBar backgroundColor="#FC4664">
+    <Label text="Perfil" color="#FFF";></Label>
+  </ActionBar>
+  
+  <DockLayout stretchLastChild="true" padding="10" backgroundColor="#1e293b">
+    <Label text="" dock="left" width="40" ></Label>
+    <Label text="" dock="top" height="40"></Label>
+    <Label text="" dock="right" width="40"></Label>
+    <Label text="" dock="bottom" height="40"></Label>
+    <StackLayout>
+      <Image src="~/app/images/perfiil.png"></Image>
+      <Label class="texto_centrado" text="Perfil" height="70" color="#FFF"></Label>
+      <Button text="Editar perfil" [nsRouterLink]="['#']" pageTransition="slide" clearHistory="true" backgroundColor="#FC4664"></Button>
+      <Button text="Regresar" [nsRouterLink]="['/home']" pageTransition="slide" clearHistory="true" backgroundColor="#AA46FC"></Button>
+      
+    </StackLayout>
+  </DockLayout>
