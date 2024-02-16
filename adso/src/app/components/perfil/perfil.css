@@ -1,0 +1,32 @@
+.card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;            
+    width: 300px;
+
+    margin: 0 auto;
+    background:linear-gradient(rgb(0, 0, 0) 30%, rgb(255, 255, 255) 30%);
+    box-shadow: 0 0 25px darkred ;
+    border-radius: 10px;
+    padding: 50px 16px;
+}
+
+.card-body{ 
+    text-align: center; padding: 20px; 
+}
+.card-body label{ 
+    color: peru; margin-bottom: 5px;
+}
+
+.card_imagen{
+    position: relative;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+}
+.card-imagen .foto{
+    object-fit: cover;
+    border-radius: 30%;
+    border: 4px solid rgb(250, 238, 227);
+    box-shadow: 0 5px 20px rgba(0,0,0,0.4);
+}

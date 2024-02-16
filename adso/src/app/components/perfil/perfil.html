@@ -1,3 +1,4 @@
+<link rel="stylesheet" href="perfil.css">
 <ActionBar backgroundColor="#FC4664">
     <Label text="Perfil" color="#FFF";></Label>
   </ActionBar>
@@ -7,11 +8,23 @@
     <Label text="" dock="top" height="40"></Label>
     <Label text="" dock="right" width="40"></Label>
     <Label text="" dock="bottom" height="40"></Label>
+
+<!--El "FlexboxLayour" Reemplaza el "Div" de HTML.-->
+<FlexboxLayout>
+  <FlexboxLayout class="card">
+    <FlexboxLayout class="card-imagen">
+      <Image class="foto" src="~/app/images/perfiil.png"></Image>
+  </FlexboxLayout>
+  <FlexboxLayout class="card-body">
+    <FlexboxLayout>
+      <label text="Juan Pablo"></label>
+    </FlexboxLayout>
+  </FlexboxLayout>
+  </FlexboxLayout>
+</FlexboxLayout>
     <StackLayout>
-      <Image src="~/app/images/perfiil.png"></Image>
       <Label class="texto_centrado" text="Perfil" height="70" color="#FFF"></Label>
       <Button text="Editar perfil" [nsRouterLink]="['#']" pageTransition="slide" clearHistory="true" backgroundColor="#FC4664"></Button>
-      <Button text="Regresar" [nsRouterLink]="['/home']" pageTransition="slide" clearHistory="true" backgroundColor="#AA46FC"></Button>
-      
+      <Button text="Regresar" [nsRouterLink]="['/home']" pageTransition="slide" clearHistory="true" backgroundColor="#AA46FC"></Button>   
     </StackLayout>
   </DockLayout>
