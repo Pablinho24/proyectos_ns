@@ -1,0 +1,38 @@
+
+<link rel="stylesheet" href="registrarse.css">
+<ActionBar backgroundColor="#FC4664">
+    <Label class="barra" color="#FFF">Inicio de Sesión</Label>
+  </ActionBar>
+
+<FlexboxLayout class="registrarse" backgroundColor="#1e293b">
+    <StackLayout class="form">
+        <Image class="imagen" src="~/app/images/logo.png"></Image>
+<!-- Ingresar Nombre -->
+      <StackLayout class="input-field">
+        <TextField hint="Ingresa tu nombre"></TextField>
+      </StackLayout>
+<!-- Ingresar Email -->
+      <StackLayout class="input-field">
+        <TextField hint="Ingresa tu Email" keyboardType="email"></TextField>
+      </StackLayout>
+
+<!-- Ingresar Contraseña -->
+      <StackLayout class="input-field">
+        <TextField hint="Ingresa tu Contraseña" secure="True"></TextField>
+      </StackLayout>
+
+<!-- Ingresar Fecha de Nacimiento -->
+      <StackLayout class="input-field">
+        <TextField hint="Ingresa tu fecha de Nacimiento" keyboardType="number"></TextField>
+      </StackLayout>
+        
+
+<!-- Botón para registrarse -->
+    <Button text="Crear cuenta" [nsRouterLink]="['/perfil']" pageTransition="hero" clearHistory="true" backgroundColor="#FC4664" color="#FFF"></Button>
+    <FlexboxLayout>
+      <label text="Soy mayor de edad"></label>
+      <Switch checked="False"></Switch>
+    </FlexboxLayout>
+
+    </StackLayout>
+  </FlexboxLayout>

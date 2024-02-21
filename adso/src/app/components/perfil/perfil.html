@@ -12,19 +12,21 @@
 <!--El "FlexboxLayour" Reemplaza el "Div" de HTML.-->
 <FlexboxLayout>
   <FlexboxLayout class="card">
-    <FlexboxLayout class="card-imagen">
+    <FlexboxLayout class="card-imagen" >
       <Image class="foto" src="~/app/images/perfiil.png"></Image>
   </FlexboxLayout>
   <FlexboxLayout class="card-body">
-    <FlexboxLayout>
+    <FlexboxLayout class="contenido">
       <label text="Juan Pablo"></label>
+      <label text="juanpa@gmail.com"></label>
+      <label text="24/03/2001"></label>
+      <label text="3004006948"></label>
     </FlexboxLayout>
   </FlexboxLayout>
   </FlexboxLayout>
 </FlexboxLayout>
-    <StackLayout>
-      <Label class="texto_centrado" text="Perfil" height="70" color="#FFF"></Label>
-      <Button text="Editar perfil" [nsRouterLink]="['#']" pageTransition="slide" clearHistory="true" backgroundColor="#FC4664"></Button>
-      <Button text="Regresar" [nsRouterLink]="['/home']" pageTransition="slide" clearHistory="true" backgroundColor="#AA46FC"></Button>   
-    </StackLayout>
   </DockLayout>
+<FlexboxLayout class="botones">
+  <Button text="Editar perfil" [nsRouterLink]="['#']" pageTransition="slide" clearHistory="true" backgroundColor="#FC4664"></Button>
+  <Button text="Regresar" [nsRouterLink]="['/home']" pageTransition="slide" clearHistory="true" backgroundColor="#AA46FC"></Button> 
+</FlexboxLayout>

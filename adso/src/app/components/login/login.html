@@ -6,36 +6,39 @@
 <FlexboxLayout class="login" backgroundColor="#1e293b">
     <StackLayout class="form">
         <Image class="imagen" src="~/app/images/logo.png"></Image>
-
-<!-- Ingresar Email -->
+<!-- Ingresar Nombre -->
       <StackLayout class="input-field">
-        <TextField hint="Email" keyboardType="email"></TextField>
+        <TextField hint="     Dirección de Correo Electrónico"></TextField>
       </StackLayout>
 
 <!-- Ingresar Contraseña -->
+    
       <StackLayout class="input-field">
-        <TextField hint="Password" secure="True"></TextField>
+        <FlexboxLayout class="clave">
+          <TextField hint="Contraseña" secure="True"></TextField>
+          <label class="fas" text="&#xf070;"></label>
+        </FlexboxLayout>
       </StackLayout>
+    
 
-<!-- Confirmar contraseña -->
-      <StackLayout class="input-field">
-        <TextField hint="Confirm password" secure="True"></TextField>
-      </StackLayout>
-        
+<!-- Botón para registrarse -->
+<Button text="Crear cuenta" [nsRouterLink]="['/perfil']" pageTransition="hero" clearHistory="true" backgroundColor="#FC4664" color="#FFF"></Button>
 
-      <!--Intento de crear un link
+<FlexboxLayout class="lineaIntermedia"></FlexboxLayout>
+<Label class="texto_centrado" text="¿No tienes una cuenta?" height="70" color="#FFF"></Label>
+<Button text="Registrate" [nsRouterLink]="['/registrarse']" pageTransition="hero" clearHistory="true" backgroundColor="#FC4664" color="#FFF"></Button>
+
+
+
+
+
+
+
+
+
+<!--Intento de crear un link
         <FormattedString>
         <span text="Tap the"></span>
         <span text="button" class="link" linkTap="onLinkTap">Olvidé la contraseña</span>
         <span text="2"></span>
       </FormattedString>-->
-
-<!-- Botón para registrarse -->
-    <Button text="Ingresar" [nsRouterLink]="['/perfil']" pageTransition="hero" clearHistory="true" backgroundColor="#FC4664" color="#FFF"></Button>
-
-<!-- Botón de olvidé la contraseña -->
-    <button text="Olvidé mi contraseña" [nsRouterLink]="['/home']" pageTransition="slide" clearHistory="true" backgroundColor="#AA46FC" color="#FFF"></button>
-    
-
-    </StackLayout>
-  </FlexboxLayout>

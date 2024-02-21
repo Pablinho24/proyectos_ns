@@ -10,3 +10,22 @@
     vertical-align: middle;
   }
 
+.clave{
+  flex-direction: row;
+  justify-content: space-between;
+  border-bottom-width: 1;
+  border-bottom-color: #fff;
+  width: 301;
+}
+
+.clave TextField{
+  border-width: 0;
+}
+
+#ojito{
+  flex-direction: row;
+  height: 1;
+  width: 1;
+  background-color: transparent;
+  border-style: none;
+}

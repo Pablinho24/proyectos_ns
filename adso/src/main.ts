@@ -1,8 +1,11 @@
-import { platformNativeScriptDynamic, NativeScriptModule } from '@nativescript/angular';
+import { platformNativeScriptDynamic, NativeScriptModule, NativeScriptCommonModule } from '@nativescript/angular';
 import { NgModule, NO_ERRORS_SCHEMA } from '@angular/core';
 import { AppComponent } from './app.component';
 import { NativeScriptRouterModule } from '@nativescript/angular';
 import { appComponents, appRoutes } from './app/app.routing';
+
+
+
 
 @NgModule({
   declarations: [AppComponent, ...appComponents],
