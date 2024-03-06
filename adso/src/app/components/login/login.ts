@@ -8,6 +8,8 @@ import { EventData, Span } from '@nativescript/core';
 @Component({
   selector: 'login',
   templateUrl: './login.html',
+  styleUrls: ['./login.css']
+
 })
 export class LoginComponent {
   public constructor(private router: Router) {
@@ -22,3 +24,5 @@ export function onLinkTap(args:EventData) {
     const span = args.object as Span;
     alert("Alerta")
 }
+
+

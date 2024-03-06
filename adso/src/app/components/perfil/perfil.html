@@ -1,4 +1,3 @@
-<link rel="stylesheet" href="perfil.css">
 <ActionBar backgroundColor="#FC4664">
     <Label text="Perfil" color="#FFF";></Label>
   </ActionBar>
@@ -8,25 +7,26 @@
     <Label text="" dock="top" height="40"></Label>
     <Label text="" dock="right" width="40"></Label>
     <Label text="" dock="bottom" height="40"></Label>
-
 <!--El "FlexboxLayour" Reemplaza el "Div" de HTML.-->
-<FlexboxLayout>
-  <FlexboxLayout class="card">
-    <FlexboxLayout class="card-imagen" >
-      <Image class="foto" src="~/app/images/perfiil.png"></Image>
-  </FlexboxLayout>
-  <FlexboxLayout class="card-body">
-    <FlexboxLayout class="contenido">
-      <label text="Juan Pablo"></label>
-      <label text="juanpa@gmail.com"></label>
-      <label text="24/03/2001"></label>
-      <label text="3004006948"></label>
+    <FlexboxLayout>
+      <FlexboxLayout class="contenedor">
+        <FlexboxLayout class="card">
+          <FlexboxLayout class="card-imagen">
+            <Image class="foto" src="~/app/images/perfiil.jpg"></Image>
+          </FlexboxLayout>
+          <FlexboxLayout class="card-body">
+            <FlexboxLayout class="contenido">
+              <label class="fas" text="&#xf007; Juan Pablo" ></label>
+              <label class="fas" text="&#xf0e0; juanpa@gmail.com"></label>
+              <label class="fas" text="&#xf073; 24/03/2001"></label>
+              <label class="fas" text="&#xf095; 3004006948"></label>
+            </FlexboxLayout>
+          </FlexboxLayout>
+        </FlexboxLayout>
+      </FlexboxLayout>
     </FlexboxLayout>
-  </FlexboxLayout>
-  </FlexboxLayout>
-</FlexboxLayout>
   </DockLayout>
 <FlexboxLayout class="botones">
-  <Button text="Editar perfil" [nsRouterLink]="['#']" pageTransition="slide" clearHistory="true" backgroundColor="#FC4664"></Button>
-  <Button text="Regresar" [nsRouterLink]="['/home']" pageTransition="slide" clearHistory="true" backgroundColor="#AA46FC"></Button> 
+  <Button class="botonedit" text="Editar perfil" [nsRouterLink]="['#']" pageTransition="slide" clearHistory="true" backgroundColor="#FC4664"></Button>
+  <Button class="botonregre" text="Regresar"[nsRouterLink]="['/home']" pageTransition="hero" clearHistory="true" backgroundColor="#FC4664" color="#FFF"></Button>
 </FlexboxLayout>

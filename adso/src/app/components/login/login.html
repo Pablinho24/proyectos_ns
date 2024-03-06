@@ -1,18 +1,16 @@
-<link rel="stylesheet" href="login.css">
 <ActionBar backgroundColor="#FC4664">
     <Label class="barra" color="#FFF">Inicio de Sesión</Label>
   </ActionBar>
 
 <FlexboxLayout class="login" backgroundColor="#1e293b">
     <StackLayout class="form">
-        <Image class="imagen" src="~/app/images/logo.png"></Image>
-<!-- Ingresar Nombre -->
+        <Image class="imagen" src="~/app/images/logoini.png"></Image>
+<!-- Ingresar Correo -->
       <StackLayout class="input-field">
         <TextField hint="     Dirección de Correo Electrónico"></TextField>
       </StackLayout>
 
 <!-- Ingresar Contraseña -->
-    
       <StackLayout class="input-field">
         <FlexboxLayout class="clave">
           <TextField hint="Contraseña" secure="True"></TextField>
@@ -20,9 +18,8 @@
         </FlexboxLayout>
       </StackLayout>
     
-
 <!-- Botón para registrarse -->
-<Button text="Crear cuenta" [nsRouterLink]="['/perfil']" pageTransition="hero" clearHistory="true" backgroundColor="#FC4664" color="#FFF"></Button>
+<Button text="Iniciar sesión" [nsRouterLink]="['/perfil']" pageTransition="hero" clearHistory="true" backgroundColor="#FC4664" color="#FFF"></Button>
 
 <FlexboxLayout class="lineaIntermedia"></FlexboxLayout>
 <Label class="texto_centrado" text="¿No tienes una cuenta?" height="70" color="#FFF"></Label>
@@ -36,9 +33,3 @@
 
 
 
-<!--Intento de crear un link
-        <FormattedString>
-        <span text="Tap the"></span>
-        <span text="button" class="link" linkTap="onLinkTap">Olvidé la contraseña</span>
-        <span text="2"></span>
-      </FormattedString>-->

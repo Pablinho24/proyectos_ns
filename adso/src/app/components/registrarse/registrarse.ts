@@ -8,6 +8,8 @@ import { EventData, Span } from '@nativescript/core';
 @Component({
   selector: 'registrarse',
   templateUrl: './registrarse.html',
+  styleUrls: ['./registrarse.css']
+
 })
 export class RegistrarseComponent {
   public constructor(private router: Router) {
